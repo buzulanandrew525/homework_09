@@ -21,7 +21,7 @@ body {
 .container {
     width: 62%;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0;
 }
 
 h2 {
@@ -56,6 +56,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @media (max-width: 767px){
@@ -65,22 +67,25 @@ h2 {
     }
 }
 
+
 .navbar-list--active {
     display: block;
 }
 
 .navbar__link {
     display: block;
-    color: red;
-    padding: 10px;
+    color: black;
+    padding: 0 10px;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     transition: color 0.5s;
     cursor: pointer;
 }
 
+.navbar__link-special,
 .navbar__link:hover {
-    color: green;
+    color: #34547A;
 }
 
 .navbar__btn {
@@ -96,6 +101,10 @@ h2 {
 @media (min-width: 768px) {
     .navbar__btn {
         display: none;
+    }
+
+    .navbar__link-special {
+        padding: 0 5px 0 0;
     }
 }
 
@@ -236,7 +245,7 @@ h2 {
 /* WORK */
 
 .work {
-    background-color: EEEFF1;
+    background-color: #EEEFF1;
 }
 
 .work-header {
@@ -247,6 +256,7 @@ h2 {
 }
 
 .work-header__title {
+    color: #000;
     font-size: 2rem;
     line-height: 2.34rem;
     margin-bottom: 50px;
@@ -265,6 +275,18 @@ h2 {
     width: 100%;
     min-height: 600px;
 }
+
+
+.footer {
+    background-color: #34547A;
+    color: #FFF;
+    padding: 50px 0;
+}
+
+.footer__bg {
+    margin-bottom: 20px;
+}
+
 
 
 @media screen and (min-width: 768px) {
