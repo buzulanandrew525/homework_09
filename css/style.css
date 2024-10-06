@@ -5,7 +5,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 html {
@@ -27,7 +26,7 @@ body {
 h2 {
     text-align: center;
 }
-/* Як це можна скоротити???? чи для всіх елементів */
+
 .hero__title,
 .about__title {
     font-weight: 500;
@@ -65,6 +64,11 @@ h2 {
         display: none;
         margin-top: 30px;
     }
+
+
+    .navbar__link-special {
+        padding: 0 10px;
+    }
 }
 
 
@@ -101,6 +105,14 @@ h2 {
 @media (min-width: 768px) {
     .navbar__btn {
         display: none;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .navbar__link-special {
